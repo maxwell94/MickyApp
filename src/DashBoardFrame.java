@@ -28,8 +28,8 @@ public class DashBoardFrame extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					DashBoardFrame frame = new DashBoardFrame();
-					frame.setVisible(true);
+					//DashBoardFrame frame = new DashBoardFrame();
+					//frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

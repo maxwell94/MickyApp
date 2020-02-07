@@ -33,6 +33,7 @@ public class LoginFrame extends JFrame {
 	private JTextField text_username;
 	private JPasswordField text_password;
 	private JLabel label_msg_login_error;
+	DashBoardFrame dashBoardFrame ; 
 
 	/**
 	 * Launch the application.
@@ -64,6 +65,10 @@ public class LoginFrame extends JFrame {
 		contentPane.setBorder(new LineBorder(new Color(85, 107, 47)));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		
+		/*Inizializzazione della classe dashBoardFrame */
+		dashBoardFrame = new DashBoardFrame();
 		
 		JPanel panel_username = new JPanel();
 		panel_username.setBackground(Color.WHITE);
@@ -154,6 +159,7 @@ public class LoginFrame extends JFrame {
 				else {
 					
 					label_msg_login_error.setText("");
+					dashBoardFrame.setVisible(true);
 				}
 			}
 		});
